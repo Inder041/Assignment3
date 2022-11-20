@@ -1,0 +1,98 @@
+<!--Name: Inderjit Singh E-mail: isingh7871@conestogac.on.ca-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Kiosk shop</title>
+    <link rel="stylesheet" href="css/style.css" />  
+  </head>
+  <header>
+  <h2>Awesome Kiosk</h2>
+  <h4>Bringing some magic to your world!</h4>
+  </header>
+  <body>
+    <div class="parentdiv">
+      <form
+        name="shopkiosk"
+        method="get"
+        onsubmit="return onSubmit();" 
+        action=""
+      >  <!-- Form Start-->
+        <ul>
+          <div class="float1">  
+          <li>
+            <label for="Name">Name:</label>                      <!--Label defined-->
+            <input type="text" id="name" name="user_name" placeholder="Full Name" />      <!-- Inputs defined -->
+          </li>
+          <br />
+          <li>
+            <label for="Mobile">Phone:</label>
+            <input type="text" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx" />
+          </li>
+          <br />
+          <li>
+            <label for="Credit">Credit Card Number:</label>
+            <input type="text" id="number" name="user_numb" placeholder="xxxx-xxxx-xxxx-xxxx" />
+          </li>
+          <br />
+          <li>
+            <label for="Cardmonth">Credit Card Expiry Month:</label>
+            <input type="text" id="month" name="user_month" />
+          </li>
+          <br />
+          <li>
+            <label for="Cardyear">Credit Card Expiry Year:</label>
+            <input type="text" id="year" name="user_year" />
+          </li>
+          <br />
+          </div>
+          <div class="float2">
+          <li>
+            <label for="Fairydust">Fairy Dust Bottles($5):</label>
+            <input type="text" id="bottle" name="user_bottle" Placeholder="10" />
+          </li>
+          <br />
+          <li>
+            <label for="Wands" Placeholder="Please enter number only">Wizard Wands($20):</label>
+            <input type="text" id="wand" name="user_wand" Placeholder="10" />
+          </li>
+          <br />
+          <li>
+            <label for="Flyingsticks" Placeholder="Please enter number only">Flying Broomsticks($200):</label>
+            <input type="text" id="stick" name="user_stick" Placeholder="10" />
+          </li>
+          <br />
+          <li>
+            <label for="Magicbag" Placeholder="Please enter number only">Magic Candy Bags($10):</label>
+            <input type="text" id="bag" name="user_bag" Placeholder="10" />
+          </li>
+          <br />
+          <li>
+            <label for="name" Placeholder="Please enter number only">Sorcerer's Stones($300):</label>
+            <input type="text" id="stone" name="user_stone" Placeholder="10" />
+          </li>
+          <br />
+          </div>
+        </ul>
+        <br>
+      </div>
+      <br>
+      <br>
+      <div>
+          <button type="submit" value="Submit">Checkout!</button> <!-- Button Submit -->
+          <p id="errors"></p>
+          </div>
+      </form>
+    </div>
+    <br>
+    <br>
+    <div>
+      <p id="details"></p>     <!-- id's to print the tables-->
+      <p id="receipt"></p>
+    </div>
+    </body>
+    <script type="text/javascript" src="js/script.js"></script>   <!--Script link -->
+  </body>
+</html>
