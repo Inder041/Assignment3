@@ -71,3 +71,7 @@ li label {
   width: 40%;
   display: inline-block;
 }
+
+#welcomeTitle {
+  color: coral;
+}
